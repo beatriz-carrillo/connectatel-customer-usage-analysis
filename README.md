@@ -16,7 +16,7 @@ Analizar la actividad de llamadas y mensajes de los clientes de ConnectaTel para
 | Archivo | Contenido |
 |---|---|
 | `plans.csv` | Información de los planes de servicio, precios y beneficios incluidos. |
-| `users.csv` | Datos demográficos de clientes, ciudad, fecha de registro, plan contratado y churn. |
+| `users_latam.csv` | Datos demográficos de clientes, ciudad, fecha de registro, plan contratado y churn. |
 | `usage.csv` | Registros de llamadas y mensajes, fechas y duración de las llamadas. |
 
 Se analizaron 4,000 clientes y 40,000 registros de actividad, integrando la información por usuario.
@@ -97,13 +97,17 @@ También puedes consultar directamente el Notebook:
 ## 🔄 Guía de reproducción
 
 1. Abrir el Notebook mediante el botón **Abrir en Colab**.
-2. Disponer de los archivos `plans.csv`, `users.csv` y `usage.csv`.
-3. Cargar los datasets en el entorno de ejecución y verificar que sus rutas coincidan con las utilizadas en el Notebook.
-4. Instalar las librerías necesarias si no están disponibles.
-5. Seleccionar **Entorno de ejecución → Ejecutar todas**.
-6. Revisar los resultados, gráficos, segmentaciones y conclusiones.
+2. Descargar los datasets originales de ConnectaTel desde la fuente autorizada de TripleTen:
+   - `plans.csv`
+   - `users_latam.csv`
+   - `usage.csv`
+3. En Google Colab, abrir el panel **Archivos** (ícono de carpeta).
+4. Utilizar **Subir archivos** para cargar los tres CSV al entorno de ejecución.
+5. Verificar que los archivos se encuentren en `/content/`.
+6. Seleccionar **Entorno de ejecución → Ejecutar todas**.
+7. Revisar los resultados, visualizaciones, segmentaciones y conclusiones.
 
-**Nota:** Los archivos de datos no se incluyen en este repositorio. Su disponibilidad y publicación dependen de los permisos de distribución correspondientes.
+**Importante:** Los archivos CSV no están incluidos en este repositorio. Deben cargarse nuevamente si se reinicia el entorno de Colab, ya que el almacenamiento es temporal.
 
 ## 📌 Estado del proyecto
 
